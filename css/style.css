@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Syne', sans-serif;
-  background: #0e0e2c;
+  background: var(--bg-dark);
   color: white;
   margin: 0;
   padding: 0;
@@ -141,8 +141,8 @@ header.hero .intro {
   margin-top: 25px;
   padding: 10px 25px;
   border-radius: 25px;
-  background: linear-gradient(90deg, #7c6fff, #ff76c1);
-  color: white;
+  background: linear-gradient(90deg, var(--blue-mid), var(--blue-light));
+  color: var(--white);
   text-decoration: none;
   font-weight: 500;
   display: inline-block;
@@ -150,7 +150,7 @@ header.hero .intro {
 }
 
 .cta-button:hover {
-  background: linear-gradient(90deg, #ff76c1, #7c6fff);
+ background: linear-gradient(90deg, var(--blue-light), var(--blue-mid));
 }
 
 /* SECTION GENERAL */
@@ -165,5 +165,29 @@ h2 {
   margin-bottom: 40px;
   text-align: center;
 }
+h2 span, h1 span {
+  color: var(--blue-light);
+}
 
+h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 10px auto 0;
+  background: linear-gradient(90deg, var(--blue-light), var(--blue-mid));
+  border-radius: 2px;
+}
 
+:root {
+  --blue-light: #7fc8ff;
+  --blue-mid: #377fbf;
+  --blue-dark: #1b3554;
+  --bg-dark: #0d0f1a;
+  --white: #ffffff;
+}
+.skill-card, .project-hover-card, .role-card, .exp-card {
+  background-color: rgba(55, 127, 191, 0.08);
+  border: 1px solid rgba(127, 200, 255, 0.1);
+  box-shadow: 0 0 12px rgba(127, 200, 255, 0.1);
+}
