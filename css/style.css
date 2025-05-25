@@ -252,3 +252,55 @@ h2::after {
 .cv-section .btn-primary:hover {
   background: linear-gradient(90deg, var(--blue-light), var(--blue-mid));
 }
+.contact-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: var(--white);
+  position: relative;
+}
+
+.contact-section h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--blue-light);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #fff;
+  color: #333;
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: #888;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #7c6fff, #ff76c1);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #ff76c1, #7c6fff);
+}
