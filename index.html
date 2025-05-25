@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio de Marie Haby Youla</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -23,48 +24,60 @@
   <p>Je suis une étudiante passionnée par tout ce qui touche à la programmation, à la conception de logiciels et de sites web. Mon objectif est de contribuer à l’avancement de la recherche scientifique et technologique en créant des logiciels futuristes. Je souhaite aussi devenir l’une des grandes femmes ingénieures de demain.</p>
 </section>
 
-<section id="experience">
+<section id="experience" class="container">
   <h2>Expériences</h2>
-  <div class="exp-card">
-    <h3>Commissaire aux comptes - ONG Dream Come True</h3>
-    <p>Depuis 2021 | Analyse budgétaire, reporting financier, statistiques, activités sociales auprès des enfants.</p>
-  </div>
-  <div class="exp-card">
-    <h3>Vice-présidente - ELLESgn</h3>
-    <p>2021 - 2022 | Coordination d’évènements de formation et d’activités sociales pour l'autonomisation des jeunes filles.</p>
-  </div>
-  <div class="exp-card">
-    <h3>Associée de magasin - Dollarama / Subway</h3>
-    <p>2024 | Expérience terrain : gestion de la pression, service client, respect des délais.</p>
-  </div>
-</section>
-
-<section id="stack">
-  <h2>Stack technique</h2>
-  <ul class="stack-list">
-    <li>Python</li>
-    <li>Java</li>
-    <li>HTML / CSS / JavaScript</li>
-    <li>GitHub</li>
-    <li>Android Studio</li>
-    <li>Microsoft Teams</li>
-  </ul>
-</section>
-
-<section id="projects">
-  <h2>Projets</h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <img src="images/project1.png" alt="Projet 1"/>
-      <h3>NotchCo</h3>
-      <p>Site WEB collaboratif de vente de stylo accessible.</p>
-      <a href="https://github.com/Notch-Co/notch-co.github.io" target="_blank">Voir le projet</a>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="exp-card h-100">
+        <h3>Commissaire aux comptes</h3>
+        <p><strong>ONG Dream Come True</strong><br>Depuis 2021 | Analyse budgétaire, reporting financier, statistiques, activités sociales auprès des enfants.</p>
+      </div>
     </div>
-    <div class="project-card">
-      <img src="images/project2.png" alt="Projet 2"/>
-      <h3>X-PC</h3>
-      <p>Application android de vente de PC.</p>
-      <a href="https://github.com/uOttawa-2024-2025-seg2505-projet/groupe-37.git" target="_blank">Voir le code</a>
+    <div class="col-md-4">
+      <div class="exp-card h-100">
+        <h3>Vice-présidente</h3>
+        <p><strong>ELLESgn</strong><br>2021 - 2022 | Coordination d’évènements de formation et d’activités sociales pour l'autonomisation des jeunes filles.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="exp-card h-100">
+        <h3>Associée de magasin</h3>
+        <p><strong>Dollarama / Subway</strong><br>2024 | Gestion de la pression, service client, respect des délais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="container">
+  <h2>Stack technique</h2>
+  <div class="row g-3">
+    <div class="col-6 col-md-4 col-lg-3"><div class="stack-item">Python</div></div>
+    <div class="col-6 col-md-4 col-lg-3"><div class="stack-item">Java</div></div>
+    <div class="col-6 col-md-4 col-lg-3"><div class="stack-item">HTML / CSS / JavaScript</div></div>
+    <div class="col-6 col-md-4 col-lg-3"><div class="stack-item">GitHub</div></div>
+    <div class="col-6 col-md-4 col-lg-3"><div class="stack-item">Android Studio</div></div>
+    <div class="col-6 col-md-4 col-lg-3"><div class="stack-item">Microsoft Teams</div></div>
+  </div>
+</section>
+
+<section id="projects" class="container">
+  <h2>Projets</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="project-card h-100">
+        <img src="images/project1.png" alt="Projet NotchCo" class="img-fluid"/>
+        <h3>NotchCo</h3>
+        <p>Site WEB collaboratif de vente de stylo accessible.</p>
+        <a href="https://github.com/Notch-Co/notch-co.github.io" target="_blank">Voir le projet</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="project-card h-100">
+        <img src="images/project2.png" alt="Projet X-PC" class="img-fluid"/>
+        <h3>X-PC</h3>
+        <p>Application android de vente de PC.</p>
+        <a href="https://github.com/uOttawa-2024-2025-seg2505-projet/groupe-37.git" target="_blank">Voir le code</a>
+      </div>
     </div>
   </div>
 </section>
@@ -92,5 +105,6 @@
 </footer>
 
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
