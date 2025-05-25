@@ -10,6 +10,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+  padding-top: 70px;
 }
 .stack-item {
   background-color: #272752;
@@ -104,9 +105,11 @@ form button:hover {
 }
 /* NAVBAR */
 .navbar {
-  background-color: #0e0e2c;
+  background-color: #0d0f1a;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1030;
 }
+
 
 .navbar-nav .nav-link {
   color: #ccc;
