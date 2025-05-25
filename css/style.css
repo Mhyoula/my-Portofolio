@@ -4,7 +4,13 @@
   display: inline-block;
 }
 
-body { font-family: 'Poppins', sans-serif; background: #0e0e2c; color: #fff; }
+body {
+  font-family: 'Syne', sans-serif;
+  background: #0e0e2c;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 .stack-item {
   background-color: #272752;
   padding: 10px 15px;
