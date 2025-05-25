@@ -1,4 +1,9 @@
-/* Style de base */
+.logo {
+  max-height: 60px;
+  width: auto;
+  display: inline-block;
+}
+
 body { font-family: 'Poppins', sans-serif; background: #0e0e2c; color: #fff; }
 .stack-item {
   background-color: #272752;
@@ -11,25 +16,17 @@ body { font-family: 'Poppins', sans-serif; background: #0e0e2c; color: #fff; }
 }
 .skill-card {
   background-color: #1a1a40;
-  padding: 20px;
-  border-radius: 20px;
+  padding: 10px;
+  border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  max-width: 100px;
+  margin: auto;
 }
-
-.skill-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 20px #ff76c1, 0 0 30px #7c6fff;
-}
-
 .skill-card img {
-  max-width: 80px;
-  transition: transform 0.4s ease;
+  max-width: 60px;
 }
 
-.skill-card:hover img {
-  transform: rotate(5deg) scale(1.1);
-}
 .project-hover-card {
   position: relative;
   overflow: hidden;
@@ -39,10 +36,13 @@ body { font-family: 'Poppins', sans-serif; background: #0e0e2c; color: #fff; }
 
 .project-hover-card img {
   width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
   display: block;
-  transition: transform 0.5s ease;
   border-radius: 16px;
 }
+
 
 .project-hover-card:hover img {
   transform: scale(1.05);
@@ -67,6 +67,29 @@ body { font-family: 'Poppins', sans-serif; background: #0e0e2c; color: #fff; }
 .project-hover-card h3 {
   font-size: 1.4rem;
   margin-bottom: 5px;
+}
+form input, form textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #2a2a50;
+  color: white;
+  width: 100%;
+}
+
+form button {
+  background: linear-gradient(90deg, #7c6fff, #ff76c1);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: linear-gradient(90deg, #ff76c1, #7c6fff);
 }
 
 .project-hover-card p {
