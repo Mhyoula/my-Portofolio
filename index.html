@@ -12,7 +12,8 @@
 
 <header class="hero">
   <div class="content">
-    <img src="images/logo_Y.png" alt="YOULA" class="logo"/>
+    <img src="images/logo_Y.png" alt="Youla" class="logo img-fluid" style="max-height: 60px;">
+
     <h1>Salut, moi c'est <span class="highlight">Marie Haby</span></h1>
     <p class="intro">Étudiante en génie logiciel à l’Université d’Ottawa, passionnée par la création d’expériences numériques modernes, accessibles et impactantes.</p>
     <a href="#contact" class="cta-button">Envie de créer ensemble ?</a>
@@ -50,29 +51,29 @@
 
 <section id="stack" class="container py-5 text-center">
   <h2 class="mb-4">Mes Stack techniques</h2>
-  <div class="row justify-content-center g-4">
-    <div class="col-6 col-md-3">
-      <div class="skill-card">
-        <img src="images/html.jpeg" alt="HTML" class="img-fluid">
+  <div class="row g-3 justify-content-center">
+    <div class="col-4 col-sm-3 col-md-2">
+      <div class="skill-card p-3">
+        <img src="images/html.png" alt="HTML" class="img-fluid">
       </div>
     </div>
-    <div class="col-6 col-md-3">
-      <div class="skill-card">
+    <div class="col-4 col-sm-3 col-md-2">
+      <div class="skill-card p-3">
         <img src="images/css.png" alt="CSS" class="img-fluid">
       </div>
     </div>
-    <div class="col-6 col-md-3">
-      <div class="skill-card">
+    <div class="col-4 col-sm-3 col-md-2">
+      <div class="skill-card p-3">
         <img src="images/js.jpg" alt="JavaScript" class="img-fluid">
       </div>
     </div>
-    <div class="col-6 col-md-3">
-      <div class="skill-card">
+    <<div class="col-4 col-sm-3 col-md-2">
+      <div class="skill-card p-3">
         <img src="images/java.png" alt="Java" class="img-fluid">
       </div>
     </div>
-    <div class="col-6 col-md-3">
-      <div class="skill-card">
+    <div class="col-4 col-sm-3 col-md-2">
+      <div class="skill-card p-3">
         <img src="images/python.jpeg" alt="Python" class="img-fluid">
       </div>
     </div>
@@ -85,15 +86,16 @@
   <div class="row g-4">
     
     <div class="col-md-6">
-      <div class="project-hover-card">
-        <img src="images/logo_N.png" alt="NotchCo" class="img-fluid">
-        <div class="overlay">
-          <h3>NotchCo</h3>
-          <p>Site WEB collaboratif de vente de stylo accessible.</p>
-          <a href="https://github.com/Notch-Co/notch-co.github.io" class="btn btn-outline-light" target="_blank">Voir le projet</a>
-        </div>
-      </div>
+  <div class="project-hover-card">
+    <img src="images/logo_N.png" alt="NotchCo" class="img-fluid" style="max-height: 180px; object-fit: contain;">
+    <div class="overlay">
+      <h3>NotchCo</h3>
+      <p>Site de vente de stylo accessible.</p>
+      <a href="#" class="btn btn-outline-light">Voir le projet</a>
     </div>
+  </div>
+</div>
+
 
     <div class="col-md-6">
       <div class="project-hover-card">
@@ -115,15 +117,24 @@
   <a href="files/CV_Haby.pdf" download class="cta-button">Télécharger le CV</a>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <form>
-    <input type="text" placeholder="Votre nom" required />
-    <input type="email" placeholder="Votre e-mail" required />
-    <textarea placeholder="Votre message..." rows="4" required></textarea>
-    <button type="submit">Envoyer</button>
+<<section id="contact" class="container py-5">
+  <h2 class="mb-4 text-center">Contact</h2>
+  <form class="row g-3 align-items-end justify-content-center">
+    <div class="col-md-3">
+      <input type="text" class="form-control" placeholder="Votre nom" required>
+    </div>
+    <div class="col-md-3">
+      <input type="email" class="form-control" placeholder="Votre e-mail" required>
+    </div>
+    <div class="col-md-4">
+      <textarea class="form-control" placeholder="Votre message..." rows="2" required></textarea>
+    </div>
+    <div class="col-md-1">
+      <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+    </div>
   </form>
 </section>
+
 
 <footer>
   <p>© 2025 Marie Haby Youla | <a href="https://github.com/Mhyoula">GitHub</a> | 
