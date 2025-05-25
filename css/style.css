@@ -9,3 +9,68 @@ body { font-family: 'Poppins', sans-serif; background: #0e0e2c; color: #fff; }
   font-size: 0.95rem;
   font-weight: 500;
 }
+.skill-card {
+  background-color: #1a1a40;
+  padding: 20px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 20px #ff76c1, 0 0 30px #7c6fff;
+}
+
+.skill-card img {
+  max-width: 80px;
+  transition: transform 0.4s ease;
+}
+
+.skill-card:hover img {
+  transform: rotate(5deg) scale(1.1);
+}
+.project-hover-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-hover-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+  border-radius: 16px;
+}
+
+.project-hover-card:hover img {
+  transform: scale(1.05);
+}
+
+.project-hover-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(10,10,25,0.85), transparent);
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.project-hover-card:hover .overlay {
+  transform: translateY(0);
+}
+
+.project-hover-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.project-hover-card p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
