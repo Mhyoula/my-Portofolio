@@ -304,3 +304,24 @@ h2::after {
 .btn-gradient:hover {
   background: linear-gradient(90deg, #ff76c1, #7c6fff);
 }
+.about-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.about-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--blue-light);
+  box-shadow: 0 0 10px rgba(127, 200, 255, 0.3);
+}
+
+.about-text {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 30px auto 0;
+  color: #ddd;
+  line-height: 1.8;
+}
